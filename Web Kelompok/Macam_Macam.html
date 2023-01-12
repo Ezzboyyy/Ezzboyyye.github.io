@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macam Macam</title>
+    <link rel="stylesheet" href="langkah.css">
+</head>
+
+<body>
+    <div class="tombol">
+        <a href="navbar.html">
+        <input type="button" value="kembali" class="button">
+        </a>
+    </div>
+    <div class="container">
+        <div class="content-slide">
+            <div class="imgslide fade">
+                <div class="numberslide">1 / 8</div>
+                <img src="c61cb8d7220fd832359c8f31bf9ca653.jpg" alt="">
+                <div class="text">7 RUMAH ADAT SUMATERA SELATAN</div>
+            </div>
+
+            <div class="imgslide fade">
+                <div class="numberslide">2 / 8</div>
+                <img src="limas.jpg" alt="Rumah Adat Limas">
+                <div class="text2">Rumah Adat Limas</div>
+                <p>Nama limas memiliki arti yaitu lima emas atau lima dan emas. Lima di sini berhubungan erat dengan bentuk bagian atas rumah tersebut yakni persegi lima. Sementara itu di bagian lantai atau dasar, dibuat dalam susunan berundak. Bagian ini biasa disebut juga dengan nama kekijing, dimana jumlahnya ada 2, 3, atau 4 buah.Umumnya bagian ruangan di dalam rumah limas terbagi menjadi tiga bagian yaitu bagian depan yang juga sering disebut dengan garang, bagian tengah, serta bagian belakang.</p>
+            </div>
+
+            <div class="imgslide fade">
+                <div class="numberslide">3 / 8</div>
+                <img src="rumah-adat-bangka-belitungrimbakita.com_.jpg" alt="Rumah Adat Rakit">
+                <div class="text3">Rumah Adat Rakit</div>
+                <p>Rumah berikutnya ialah rumah rakit. Sesuai namanya, rumah ini dibangun menggunakan cara atau konsep dari rakit. Rumah Rakit merupakan rumah tradisional yang disusun dengan bahan dasar kayu, bambu, dan balok. Anda dapat menjumpai bangunan ini di tepian tebing sungai dalam kondisi terapung.</p>
+            </div>
+
+            <div class="imgslide fade">
+                <div class="numberslide">4 / 8</div>
+                <img src="rumah-cara-gudang.jpg" alt="Rumah Adat cara Gudang">
+                <div class="text3">Rumah Adat cara Gudang</div>
+                <p>Rumah tradisional suku Palembang selanjutnya yaitu rumah cara gudang. Bangunan ini mengadopsi konsep yang sama, yaitu menggunakan atap berbentuk limas. Karena ukurannya yang terlihat besar, namun terkesan flat bersisi panjang serta tidak memiliki berudak, sehingga rumah ini dinamakan cara gudang.</p>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide">5 / 8</div>
+                <img src="Rumah-Kilapan-1536x926.jpg" alt="Rumah Adat Kilapa">
+                <div class="text3">Rumah Adat Kilapan</div>
+                <p>Selain Palembang, suku asli warga Sumatera Selatan lainnya ialah Pasemah.Salah satu rumah adat milik Pasemah ialah rumah kilapan. Berbeda dengan rumah adat lainnya, rumah kilapan tidak menerapkan desain ukiran dalam mempercantik eksterior maupun interiornya.</p>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide">6 / 8</div>
+                <img src="Rumah-Tatahan.jpg" alt="Rumah Adat Tatahan">
+                <div class="text4">Rumah Adat Tatahan</div>
+                <p>Rumah Tatahan merupakan rumah adat tradisional yang juga dibangun oleh suku Pasemah.Berbentuk Rumah Panggung Setinggi 2meter. Kolong rumah biasanya dijadikan tempat penyimpanan kayu bakar. Selain itu fungsinya Agar binatang buas tidak bisa masuk sembarangan ke dalam rumah</p>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide">7 / 8</div>
+                <img src="Rumah-Padu-Kingking.jpg" alt="Rumah Adat Padu Kingking">
+                <div class="text3">Rumah Adat Padu Kingking </div>
+                <p>Rumah padu kingking adalah rumah adat dengan bahan dasar bangunan berupa paduan bambu dan kayu. Bangunan ini memiliki bentuk ke arah bujur sangkar, atapnya berbahan bambu terbagi menjadi dua (gelumpai) yang dibentuk berupa piabung.</p>
+            </div>
+            <div class="imgslide fade">
+                <div class="numberslide">8 / 8</div>
+                <img src="Rumah-Padu-Ampar.jpg" alt="Rumah Adat Padu Ampar">
+                <div class="text3">Rumah Adat Padu Ampar</div>
+                <p>Rumah ini memiliki atap tinggi dari bambu, sedikit melengkung seperti pelana kuda dan berbentuk trapesium bernama piabung. Bangunan rumah ini di lengkapi dengan tangga yang juga terbuat dari bambu. Namun bentuk dari bangunan rumah tradisional ini tidak berundak, sehingga nampak seperti tidak memiliki sangkar bawah maupun atas.</p>
+            </div>
+
+            <a class="prev" onClick="nextslide(-1)">&#10094;</a>
+            <a class="next" onClick="nextslide(1)">&#10095;</a> 
+        </div>
+
+        <div class="page">
+            <span class="dot" onClick="dotslide(1)"></span>
+            <span class="dot" onClick="dotslide(2)"></span>
+            <span class="dot" onClick="dotslide(3)"></span>
+            <span class="dot" onClick="dotslide(4)"></span>
+            <span class="dot" onClick="dotslide(5)"></span>
+            <span class="dot" onClick="dotslide(6)"></span>
+            <span class="dot" onClick="dotslide(7)"></span>
+            <span class="dot" onClick="dotslide(8)"></span>
+        </div>
+
+    </div>
+
+    <script>
+        var slideIndex = 1;
+            showSlide(slideIndex);
+
+        function nextslide(n){
+            showSlide(slideIndex += n);
+        }
+
+        function dotslide(n){
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            var i;
+            var slides = document.getElementsByClassName("imgslide");
+            var dot = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < slides.length; i++) {
+                
+                dot[i].className = dot[i].className.replace(" active", "");
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            dot[slideIndex - 1].className += " active";
+            
+
+
+        }
+    </script>
+
+</body>
+
+</html>

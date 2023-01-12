@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+html {
+  height: 100%;
+}
+body {
+    font-family: 'Argent-cf';
+    text-align: center;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(57, 106, 252, 0.5), rgba(41, 72, 255, 0.2)), url(https://assets.kompasiana.com/items/album/2022/10/25/20221024-102246-6357b06f4addee0cfc0cf2b2.jpg?t=o&v=770);
+    background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+h1 {
+    font-size: 10vw;
+}
+.text-gradient {
+    text-align: center;
+    background: linear-gradient(to right, #ff0000 20%, #fced06 40%, #fced06 60%, #ff0000 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 4s linear infinite;
+}
+.button-81 {
+  background-color: #f09e05;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@keyframes animate {
+  to {
+    background-position: 200% center;
+  }
+}
+
+main {
+    display: flex;
+    flex-wrap: nowrap;
+    height: -webkit-fill-availeble;
+    max-height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0px;
+    width: 250px;
+    height: 100%;
+    background: #ff0000;
+    transition: all 0.5s ease;
+}
+
+.sidebar .top {
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    background-image: linear-gradient(to right, #fec8a7, #b2d2a4);
+}
+
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(6, 255, 251, 0.1);
+    border-bottom: 1px solid rgba(125, 134, 146, 0.302);
+    transition: all 0.5s ease;
+}
+
+ul li:hover a {
+    padding-left: 100px;
+    background: #efe7bc;
+    color: rgb(0, 0, 0);
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
+}
+
+
+#check {
+    display: none;
+}
+
+label #btn {
+    position: absolute;
+    cursor: pointer;
+    background: #transparent;
+    border-radius: 3px;
+}
+
+label #open {
+    position: absolute;
+    cursor: pointer;
+    background: #transparent;
+    border-radius: 1px;
+    font-size: 30px;
+}
+
+label #open {
+    left: 0;
+    top: 10;
+    font-size: 30px;
+    padding: 6px 12px;
+    transition: all 0.5s ease;
+}
+
+label #btn {
+    z-index: 1111;
+    left: 195px;
+    top: 5px;
+    font-size: 20px;
+    color: #transparent;
+    padding: 4px 9px;
+    transition: all 0.5s ease;
+}
+
+#check:checked~.sidebar {
+    left:-250px;
+}
+
+#check:checked~label #open {
+    left:30px;
+    font-size: 20px;
+}
+
+#check:checked~label #btn {
+    left:-195px;
+}
+
+section {
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+section h1 {
+    text-align: center;
+    padding-top: 200px;
+    font-size: 60px;
+    color: #004369;
+}
